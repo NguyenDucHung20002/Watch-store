@@ -1,0 +1,182 @@
+@import "./alert";
+
+@mixin btn {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  &:hover {
+    background-color: #ba933e;
+  }
+  @content;
+}
+
+.cart-main {
+  .container {
+    position: relative;
+    .wrapper-carts {
+      .product-main {
+        .head-action {
+          margin: 40px 0 30px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            font-weight: 700;
+            font-size: 35px;
+          }
+
+          .action-cart {
+            .detele-all {
+              @include btn();
+              .wrapper-model-detele-all {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e5e5e5;
+                border-radius: 3px;
+                padding: 3px;
+                p {
+                  margin: 0;
+                  color: #1a1a1a;
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+                .btn-sure {
+                  color: #fff;
+                  border-radius: 3px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  width: 30px;
+                  height: 25px;
+                  line-height: 25px;
+                }
+                #yes {
+                  background-color: #2ecc71;
+                }
+                #no {
+                  background-color: #c0392b;
+                }
+              }
+            }
+            .update-cart {
+              @include btn();
+            }
+          }
+        }
+
+        table {
+          width: 100%;
+          thead {
+            height: 50px;
+            border-bottom: 2px solid #e5e5e5;
+            tr {
+              th {
+                font-weight: 500;
+                white-space: nowrap;
+              }
+            }
+          }
+          tbody {
+            tr {
+              border-bottom: 2px solid #e5e5e5;
+              th {
+                font-weight: 500;
+                white-space: nowrap;
+                padding: 20px 0;
+
+                .img {
+                  width: 100px;
+
+                  img {
+                    width: 100px;
+                  }
+                }
+                .quantiti-product {
+                  width: 120px;
+                  height: 50px;
+                  background-color: #f5f5f5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  border-radius: 5px;
+                  button {
+                    height: 100%;
+                    flex: 1;
+                    font-size: 18px;
+                    transition: 0.2s;
+                    font-weight: 500;
+                    &:hover {
+                      color: #ff4757;
+                    }
+                  }
+                  input {
+                    font-size: 18px;
+                    width: 50px;
+                    height: 100%;
+                    text-align: center;
+                  }
+                }
+                .delete {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  color: #f5f5f5;
+                  background-color: #1a1a1a;
+                  transition: 0.2s;
+                  &:hover {
+                    background-color: #ba933e;
+                  }
+                  i {
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .wrapper-payment {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      .payment-main {
+        max-width: 1200px;
+        border-bottom: #e5e5e5 2px solid;
+        border-top: #e5e5e5 2px solid;
+        padding: 10px 0;
+        background-color: #fefefe;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .payment {
+          height: 50px;
+          margin: 5px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 40px;
+          .total {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ba933e;
+            margin-right: 10px;
+          }
+          .checkout {
+            @include btn();
+          }
+        }
+      }
+    }
+  }
+}

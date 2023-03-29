@@ -1,0 +1,28 @@
+.cart-main {
+  .container {
+    position: relative;
+    .wrapper-carts {
+    }
+    .wrapper-payment {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .payment-main {
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+        padding: 10px 50px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .coupon {
+          input {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+}

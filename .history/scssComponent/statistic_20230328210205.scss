@@ -1,0 +1,77 @@
+.wrapper-statistic {
+  .container {
+    .statistic {
+      min-height: 50vh;
+      .statistic-item {
+        padding: 30px;
+        .item {
+          height: 150px;
+          padding: 30px;
+          border-radius: 10px;
+          margin: 0;
+          color: #fff;
+        }
+      }
+      .products {
+        .item {
+          background-image: linear-gradient(
+            to right top,
+            #feca57,
+            #f9b747,
+            #f3a539,
+            #ed922c,
+            #e67e22
+          );
+        }
+      }
+      .revenue {
+        .item {
+          background-image: linear-gradient(
+            to right top,
+            #e5e5e5,
+            #ded0e8,
+            #e4b6e0,
+            #f199cb,
+            #fd79a8
+          );
+        }
+      }
+      .users {
+        .item {
+          background-image: linear-gradient(
+            to right top,
+            #e5e5e5,
+            #d6d7eb,
+            #c0cbf2,
+            #a1c1f9,
+            #74b9ff
+          );
+        }
+      }
+      .websiteTraffic {
+        .item {
+          background-image: linear-gradient(
+            to right top,
+            #55efc4,
+            #46dfab,
+            #3ace92,
+            #2fbe79,
+            #27ae60
+          );
+        }
+      }
+      .orders {
+        .item {
+          background-image: linear-gradient(
+            to right top,
+            #fab1a0,
+            #f39581,
+            #eb7765,
+            #e1574a,
+            #d63031
+          );
+        }
+      }
+    }
+  }
+}

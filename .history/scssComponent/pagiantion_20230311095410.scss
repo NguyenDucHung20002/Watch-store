@@ -1,0 +1,22 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+  ul {
+    li {
+      cursor: pointer;
+      padding: 5px;
+      height: 40px;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
+      border-right: 1px solid #666;
+    }
+    .prev {
+      border-left: #666 1px solid;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      background-color: #666;
+    }
+    .next {
+    }
+  }
+}

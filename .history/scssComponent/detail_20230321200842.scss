@@ -1,0 +1,97 @@
+.wrapper-detail {
+  .container {
+    .detail-img {
+      padding: 20px 5px 20px 0;
+      .action-slider-show {
+        transition: 0.3s;
+        width: 100%;
+        max-height: 565px;
+        object-fit: cover;
+      }
+      .action-slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        button {
+          font-size: 24px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #666;
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            background-color: #333;
+          }
+        }
+        .wrapper-product-item {
+          margin: 0 auto;
+          .product-main {
+            max-width: 270px;
+            display: flex;
+            padding-right: 2px;
+            overflow: hidden;
+
+            .product-item {
+              img {
+                transition: 0.1s;
+                padding: 5px;
+                width: 90px;
+                cursor: pointer;
+              }
+            }
+            .active {
+              img {
+                border: 2px solid #666;
+              }
+            }
+          }
+        }
+      }
+    }
+    .detail-content {
+      margin-top: 40px;
+      max-width: 500px;
+      .product-name {
+        font-size: 26px;
+        color: #353b48;
+        font-weight: 700;
+      }
+      .stars-rating {
+        margin: 15px 0;
+        i {
+          font-size: 20px;
+          color: #f0932b;
+        }
+      }
+      .prise {
+        font-size: 24px;
+        font-weight: 700;
+        color: #666;
+      }
+      .describe {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .content-action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .quantiti-product {
+          width: 100px;
+          height: 50px;
+          background-color: #f5f5f5;
+          button {
+            height: 100%;
+          }
+          input {
+            height: 100%;
+            border: #333 1px solid;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@mixin btn {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  &:hover {
+    background-color: #ba933e;
+  }
+  @content;
+}
+
+.cart-main {
+  .container {
+    position: relative;
+    .wrapper-carts {
+      .product-main {
+        h2 {
+          font-weight: 700;
+          font-size: 35px;
+          margin: 40px 0;
+        }
+        table {
+          width: 100%;
+          thead {
+            padding: 20px 0;
+            tr {
+              th {
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+    .wrapper-payment {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .payment-main {
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+        padding: 20px 50px;
+        max-width: 1200px;
+        background-color: #fefefe;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .action-cart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px 0;
+
+          .detele-all {
+            @include btn();
+            margin-right: 20px;
+          }
+          .update-cart {
+            @include btn();
+          }
+        }
+
+        .payment {
+          height: 50px;
+          margin: 5px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .total {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ba933e;
+            margin-right: 10px;
+          }
+          .checkout {
+            @include btn();
+          }
+        }
+      }
+    }
+  }
+}

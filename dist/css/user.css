@@ -1,0 +1,335 @@
+.alert {
+  position: fixed;
+  z-index: 1300;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.alert i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.alert.alert-primary i {
+  background-color: #0a58ca;
+}
+
+.alert.alert-danger i {
+  background-color: #b02a37;
+}
+
+.alert.get-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+}
+
+.wrapper-form {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #747d8c;
+}
+
+.wrapper-form .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+.wrapper-form .container .wrapper-BG {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-form .container .wrapper-BG .box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper-form .container .wrapper-BG .box h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.wrapper-form .container .wrapper-BG .box button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wrapper-form .container .form-bx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 45px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.12);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.wrapper-form .container .form-bx .form {
+  position: absolute;
+  left: 0;
+  padding: 50px;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-form .container .form-bx .form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper-form .container .form-bx .form form .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-form .container .form-bx .form form .content img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.wrapper-form .container .form-bx .form form .content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.wrapper-form .container .form-bx .form form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.wrapper-form .container .form-bx .form form input::-webkit-input-placeholder {
+  opacity: 0.8;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-form .container .form-bx .form form input:-ms-input-placeholder {
+  opacity: 0.8;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-form .container .form-bx .form form input::-ms-input-placeholder {
+  opacity: 0.8;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-form .container .form-bx .form form input::placeholder {
+  opacity: 0.8;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-form .container .form-bx .form form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.wrapper-form .container .form-bx .form form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.wrapper-form .container .form-bx .form form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.wrapper-form .container .form-bx .form form input:focus::placeholder {
+  opacity: 0;
+}
+
+.wrapper-form .container .form-bx .form form button {
+  background-color: #747d8c;
+  color: #fff;
+  max-width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.wrapper-form .container .form-bx .form form .forgot {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #6e6e6e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.wrapper-form .container .form-bx .form form .forgot:hover {
+  color: #333;
+}
+
+.wrapper-form .container .form-bx .form-signup {
+  left: 100%;
+}
+
+.wrapper-form .container .form-bx .form-signup form button {
+  background-color: #3867d6;
+}
+
+.wrapper-form .container .form-bx.active {
+  left: 52%;
+}
+
+.wrapper-form .container .form-bx.active .form-signin {
+  left: -100%;
+}
+
+.wrapper-form .container .form-bx.active .form-signup {
+  left: 0;
+}
+
+@media (max-width: 991px) {
+  .wrapper-form .container {
+    max-width: 400px;
+    height: 650px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper-form .wrapper-BG {
+    top: 0 !important;
+    height: 100% !important;
+  }
+  .wrapper-form .wrapper-BG .box {
+    position: absolute !important;
+    width: 100% !important;
+    height: 150px !important;
+    bottom: 0 !important;
+  }
+  .wrapper-form .wrapper-BG .signin {
+    top: 0 !important;
+  }
+  .wrapper-form .form-bx {
+    width: 100% !important;
+    height: 500px !important;
+    top: 0 !important;
+  }
+  .wrapper-form .form-bx.active {
+    left: 0 !important;
+    top: 150px !important;
+  }
+}
+
+.active {
+  background-color: #3867d6;
+}
+/*# sourceMappingURL=user.css.map */

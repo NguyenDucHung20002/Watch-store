@@ -1,0 +1,31 @@
+section {
+  .container {
+    h2 {
+    }
+    .wrapper-products {
+      position: relative;
+      a {
+        position: relative;
+        display: inline-block;
+        img {
+          position: relative;
+          width: 100%;
+          object-fit: cover;
+          z-index: 1;
+          transition: 0.3s;
+        }
+        .pd-bg-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+        }
+        &:hover {
+          .pd-img {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

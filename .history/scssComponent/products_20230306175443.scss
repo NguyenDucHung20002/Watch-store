@@ -1,0 +1,15 @@
+section {
+  .container {
+    h2 {
+    }
+    .wrapper-products {
+      a {
+        display: inline-block;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

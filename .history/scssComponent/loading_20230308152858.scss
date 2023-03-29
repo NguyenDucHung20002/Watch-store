@@ -1,0 +1,23 @@
+.spinner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 0 5px;
+    &:nth-child(2) {
+      opacity: 0;
+      animation: spinner 0.2s forwards 0.5s;
+    }
+  }
+}
+
+@keyframes spinner {
+  to {
+    opacity: 1;
+  }
+}

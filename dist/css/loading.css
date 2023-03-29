@@ -1,0 +1,33 @@
+.spinner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.spinner li {
+  margin: 0 5px;
+}
+
+.spinner.hide-spinner {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner.show-spinner {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=loading.css.map */

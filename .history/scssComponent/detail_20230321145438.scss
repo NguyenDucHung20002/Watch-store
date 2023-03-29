@@ -1,0 +1,34 @@
+.wrapper-detail {
+  padding: 50px;
+  .container {
+    .detail-img {
+      .action-slider {
+        display: flex;
+        align-items: center;
+        button {
+          font-size: 24px;
+        }
+        .wrapper-product-item {
+          .product-main {
+            max-width: 270px;
+            display: flex;
+            padding-right: 2px;
+            overflow: hidden;
+
+            .product-item {
+              transition: 0.3s;
+              padding: 5px;
+              img {
+                width: 90px;
+                cursor: pointer;
+              }
+            }
+            .active {
+              border: 2px solid #666;
+            }
+          }
+        }
+      }
+    }
+  }
+}

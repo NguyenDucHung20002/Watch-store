@@ -1,0 +1,22 @@
+body {
+  position: relative;
+  .scroll-top {
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    bottom: 30px;
+    button {
+      width: 60px;
+      height: 60px;
+      background-color: #57606f;
+      border-radius: 50%;
+
+      box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
+      i {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+}

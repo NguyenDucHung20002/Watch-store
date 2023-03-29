@@ -1,0 +1,19 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+  ul {
+    li {
+      cursor: pointer;
+      padding: 5px;
+      height: 40px;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
+      border-right: 1px solid #666;
+    }
+    .prev {
+      border-left: #666 1px solid;
+    }
+    .next {
+    }
+  }
+}

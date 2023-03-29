@@ -1,0 +1,17 @@
+.cart-main {
+  .container {
+    position: relative;
+    .wrapper-carts {
+    }
+    .wrapper-payment {
+      position: fixed;
+      max-width: 1200px;
+      .coupon {
+        input {
+        }
+        button {
+        }
+      }
+    }
+  }
+}

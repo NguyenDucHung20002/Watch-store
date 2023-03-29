@@ -1,0 +1,31 @@
+.wrapper-statistic {
+  .container {
+    .statistic {
+      height: 60vh;
+      .statistic-item {
+        padding: 30px;
+        p {
+          margin: 0;
+        }
+      }
+      .products {
+        background-image: linear-gradient(
+          to right top,
+          #feca57,
+          #f9b747,
+          #f3a539,
+          #ed922c,
+          #e67e22
+        );
+      }
+      .revenue {
+      }
+      .users {
+      }
+      .websiteTraffic {
+      }
+      .orders {
+      }
+    }
+  }
+}

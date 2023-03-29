@@ -1,0 +1,23 @@
+section {
+  .container {
+    h2 {
+    }
+    .wrapper-products {
+      .item {
+        position: relative;
+        display: inline-block;
+        img {
+          position: relative;
+          width: 100%;
+          object-fit: cover;
+          z-index: 1;
+        }
+        .pd-bg-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

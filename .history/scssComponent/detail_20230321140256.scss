@@ -1,0 +1,30 @@
+.wrapper-detail {
+  .container {
+    .detail-img {
+      .action-slider {
+        display: flex;
+        align-items: center;
+        button {
+          font-size: 24px;
+        }
+        .wrapper-product-item {
+          .product-main {
+            max-width: 270px;
+            display: flex;
+            overflow: hidden;
+            .product-item {
+              img {
+                padding: 5px;
+                width: 90px;
+                cursor: pointer;
+              }
+            }
+            .active {
+              border: 1px solid #666;
+            }
+          }
+        }
+      }
+    }
+  }
+}

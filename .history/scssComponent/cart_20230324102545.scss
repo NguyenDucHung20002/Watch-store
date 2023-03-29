@@ -1,0 +1,24 @@
+.cart-main {
+  .container {
+    position: relative;
+    .wrapper-carts {
+    }
+    .wrapper-payment {
+      .payment-main {
+        position: fixed;
+        padding: 20px;
+        background-color: aqua;
+        width: 1200px;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        .coupon {
+          input {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+}
