@@ -310,6 +310,10 @@ body {
   color: #fff;
 }
 
+.container .nav-top .wrapper-nav-top .nav-action .user .dropdown-user li:hover a {
+  color: #fff;
+}
+
 .container .nav-top .wrapper-nav-top .nav-action .user i {
   font-size: 24px;
   margin-right: 10px;
