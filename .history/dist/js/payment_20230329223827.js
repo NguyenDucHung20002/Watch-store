@@ -102,20 +102,7 @@ window.addEventListener("load", function () {
                       method: "PUT",
                       body: JSON.stringify({ carts: [] }),
                     }).then(() => {
-                      fetch(`${http}momo`, {
-                        method: "POST", // or 'PUT'
-                        headers: {
-                          "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                          total: totalCart,
-                          nextUrl: "http://127.0.0.1:5500/thanks.html",
-                        }),
-                      })
-                        .then((data) => data.json())
-                        .then((data) => {
-                          window.location.replace(`${data.data?.payUrl}`);
-                        });
+                      window.location.replace("./thanks.html");
                     });
                   });
               }

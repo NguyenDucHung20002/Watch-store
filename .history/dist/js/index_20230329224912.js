@@ -10,16 +10,6 @@ const HTTP = "http://localhost:5000/api/";
 const userId = User?.data.idUser;
 spinner(true);
 let likes = [];
-fetch(`${HTTP}/like/user/${userId}`, {
-  headers: {
-    "Content-type": "application/json; charset=UTF-8",
-    authentication: User?.token,
-  },
-})
-  .then((data) => data.json())
-  .then((data) => {
-    likes = [...data.data];
-  });
 async function countWebsiteTraffic() {
   await fetch(`${HTTP}statistic`)
     .then((data) => data.json())
@@ -40,7 +30,7 @@ async function checkAdmin() {
   await fetch(`${HTTP}user/check`, {
     headers: {
       "Content-Type": "application/json",
-      authentication: User?.token,
+      authentication: User.token,
     },
   })
     .then((data) => data.json())
@@ -292,7 +282,7 @@ window.addEventListener("load", function () {
           fetch(`${_this.HTTP}/like/user/${userId}`, {
             headers: {
               "Content-type": "application/json; charset=UTF-8",
-              authentication: User?.token,
+              authentication: User.token,
             },
           })
             .then((data) => data.json())
@@ -307,7 +297,7 @@ window.addEventListener("load", function () {
               fetch(`${_this.HTTP}/updatelike/user/${userId}`, {
                 headers: {
                   "Content-type": "application/json; charset=UTF-8",
-                  authentication: User?.token,
+                  authentication: User.token,
                 },
                 method: "PUT",
                 body: JSON.stringify({ likes }),
@@ -343,7 +333,7 @@ window.addEventListener("load", function () {
               fetch(`${_this.HTTP}/cart/user/${userId}`, {
                 headers: {
                   "Content-type": "application/json; charset=UTF-8",
-                  authentication: User?.token,
+                  authentication: User.token,
                 },
               })
                 .then((data) => data.json())
@@ -364,7 +354,7 @@ window.addEventListener("load", function () {
                   fetch(`${_this.HTTP}/updatecart/user/${userId}`, {
                     headers: {
                       "Content-type": "application/json; charset=UTF-8",
-                      authentication: User?.token,
+                      authentication: User.token,
                     },
                     method: "PUT",
                     body: JSON.stringify({ carts }),

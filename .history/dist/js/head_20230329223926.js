@@ -3,7 +3,7 @@ const $$ = document.querySelectorAll.bind(document);
 import debounceFn from "./debouceFn.js";
 const User = JSON.parse(localStorage.getItem("loginUser"));
 console.log("User:", User);
-const HTTP = "http://localhost:5000/api";
+const HTTP = "https://api-do-an-co-so.vercel.app/api";
 export function updateCart() {
   const cartQuantities = $(".quantities-cart");
   fetch(`${HTTP}/cart/user/${User.data.idUser}`, {

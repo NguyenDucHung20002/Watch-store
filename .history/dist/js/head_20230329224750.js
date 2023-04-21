@@ -61,7 +61,7 @@ export default function head() {
     showUser.innerHTML = `<i class="fa-solid fa-user"></i> ${User.data?.username}
     <ul class="dropdown-user">
         <li class="profile">Your profile</li>
-        <li class="purchase"><a href="./puchase.html">Purchase</a></li>
+        <li class="purchase"> <a href="./puchase.html">Purchase</a></li>
         <li class="logout">Logout</li>
     </ul>
     `;

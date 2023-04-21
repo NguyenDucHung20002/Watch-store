@@ -102,6 +102,7 @@ window.addEventListener("load", function () {
                       method: "PUT",
                       body: JSON.stringify({ carts: [] }),
                     }).then(() => {
+                      window.location.replace("./thanks.html");
                       fetch(`${http}momo`, {
                         method: "POST", // or 'PUT'
                         headers: {
@@ -109,13 +110,10 @@ window.addEventListener("load", function () {
                         },
                         body: JSON.stringify({
                           total: totalCart,
-                          nextUrl: "http://127.0.0.1:5500/thanks.html",
+                          nextUrl:
+                            "https://www.youtube.com/watch?v=n9VGxV12iSw&list=RDMMs_PhHpT9Nl8&index=14",
                         }),
-                      })
-                        .then((data) => data.json())
-                        .then((data) => {
-                          window.location.replace(`${data.data?.payUrl}`);
-                        });
+                      });
                     });
                   });
               }

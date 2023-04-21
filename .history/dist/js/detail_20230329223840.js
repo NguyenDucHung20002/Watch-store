@@ -91,6 +91,12 @@ window.addEventListener("load", function () {
   const productMain = document.querySelector(".product-main");
   const nextBtn = document.querySelector(".btn-next");
   const prevBtn = document.querySelector(".btn-prev");
+  const btnCheckout = document.querySelector(".checkout");
+
+  btnCheckout.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log(this);
+  });
 
   productMain.addEventListener("click", function (e) {
     e.preventDefault();

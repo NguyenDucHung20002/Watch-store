@@ -6,6 +6,7 @@ const $$ = document.querySelectorAll.bind(document);
 const alertSuccess = $(".alert-primary");
 const alertDanger = $(".alert-danger");
 const User = JSON.parse(localStorage.getItem("loginUser"));
+console.log("User:", User);
 if (User?.token) {
   checkUser();
 } else {

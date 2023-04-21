@@ -111,11 +111,7 @@ window.addEventListener("load", function () {
                           total: totalCart,
                           nextUrl: "http://127.0.0.1:5500/thanks.html",
                         }),
-                      })
-                        .then((data) => data.json())
-                        .then((data) => {
-                          window.location.replace(`${data.data?.payUrl}`);
-                        });
+                      });
                     });
                   });
               }
