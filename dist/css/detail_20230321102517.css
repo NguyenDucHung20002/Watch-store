@@ -1,0 +1,8 @@
+.wrapper-detail .container .detail-img .action-slider .product-img {
+  max-width: 270px;
+  display: flex;
+}
+.wrapper-detail .container .detail-img .action-slider .product-img img {
+  padding: 2px;
+  width: 90px;
+}/*# sourceMappingURL=detail_20230321102517.css.map */

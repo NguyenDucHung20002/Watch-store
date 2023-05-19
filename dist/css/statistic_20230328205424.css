@@ -1,0 +1,24 @@
+.wrapper-statistic .container .statistic {
+  height: 50vh;
+}
+.wrapper-statistic .container .statistic .statistic-item {
+  padding: 30px;
+}
+.wrapper-statistic .container .statistic .statistic-item .item {
+  height: 150px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0;
+}
+.wrapper-statistic .container .statistic .products .item {
+  background-image: linear-gradient(to right top, #feca57, #f9b747, #f3a539, #ed922c, #e67e22);
+}
+.wrapper-statistic .container .statistic .revenue .item {
+  background-image: linear-gradient(to right top, #e5e5e5, #ded0e8, #e4b6e0, #f199cb, #fd79a8);
+}
+.wrapper-statistic .container .statistic .users .item {
+  background-image: linear-gradient(to right top, #e5e5e5, #d6d7eb, #c0cbf2, #a1c1f9, #74b9ff);
+}
+.wrapper-statistic .container .statistic .websiteTraffic .item {
+  background-image: linear-gradient(to right top, #e5e5e5, #c0dbf8, #66dbf7, #00d8c9, #2ecc71);
+}/*# sourceMappingURL=statistic_20230328205424.css.map */

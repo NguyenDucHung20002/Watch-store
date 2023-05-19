@@ -1,0 +1,50 @@
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  overflow-y: auto;
+}
+#dashboard .statistics {
+  padding: 20px 30px;
+}
+#dashboard .statistics .statistic {
+  padding: 10px;
+}
+#dashboard .statistics .statistic .card {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+#dashboard .statistics .statistic .card .box {
+  font-family: "Roboto Mono", monospace;
+}
+#dashboard .statistics .statistic .card .box p {
+  font-weight: bolder;
+  font-size: 35px;
+  margin: 0;
+  color: #00a8ff;
+}
+#dashboard .statistics .statistic .card .box .name-card {
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 500;
+  color: #7f8fa6;
+}
+#dashboard .statistics .statistic .card .card-icon {
+  margin-top: 10px;
+}
+#dashboard .statistics .statistic .card .card-icon i {
+  font-size: 50px;
+  color: #7f8fa6;
+}
+#dashboard .dashboard-body {
+  flex: 1;
+}
+#dashboard .dashboard-body .my-chart {
+  height: 50%;
+}/*# sourceMappingURL=adminDashboard_20230427205954.css.map */

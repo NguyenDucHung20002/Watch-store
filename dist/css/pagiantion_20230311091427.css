@@ -1,0 +1,9 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+}
+.page-navigation ul li {
+  cursor: pointer;
+  height: 50px;
+  background-color: #666;
+}/*# sourceMappingURL=pagiantion_20230311091427.css.map */

@@ -1,0 +1,13 @@
+.spinner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner li {
+  margin: 0 5px;
+}/*# sourceMappingURL=loading_20230308151845.css.map */

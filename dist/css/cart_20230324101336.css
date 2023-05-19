@@ -1,0 +1,7 @@
+.cart-main .container {
+  position: relative;
+}
+.cart-main .container .wrapper-payment {
+  position: fixed;
+  max-width: 1200px;
+}/*# sourceMappingURL=cart_20230324101336.css.map */

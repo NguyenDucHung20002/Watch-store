@@ -1,0 +1,23 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+}
+.page-navigation ul li {
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+}
+.page-navigation ul .prev {
+  border-left: #666 1px solid;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: #666;
+}
+.page-navigation ul .next {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #666;
+}/*# sourceMappingURL=pagiantion_20230311095512.css.map */

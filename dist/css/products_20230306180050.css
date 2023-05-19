@@ -1,0 +1,20 @@
+section .container .wrapper-products {
+  position: relative;
+}
+section .container .wrapper-products a {
+  position: relative;
+  display: inline-block;
+}
+section .container .wrapper-products a img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+section .container .wrapper-products a .pd-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}/*# sourceMappingURL=products_20230306180050.css.map */

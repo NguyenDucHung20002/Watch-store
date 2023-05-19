@@ -1,0 +1,30 @@
+#dashboard .statistics {
+  padding: 30px;
+}
+#dashboard .statistics .statistic {
+  padding: 10px;
+}
+#dashboard .statistics .statistic .card {
+  padding: 20px 20px;
+}
+#dashboard .statistics .statistic .card .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+#dashboard .statistics .statistic .card .box p {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0;
+  color: #00a8ff;
+}
+#dashboard .statistics .statistic .card .box i {
+  font-size: 40px;
+  color: #7f8fa6;
+}
+#dashboard .statistics .statistic .card .name-card {
+  white-space: nowrap;
+  font-size: 18px;
+  color: #7f8fa6;
+}/*# sourceMappingURL=adminDashboard_20230427163205.css.map */

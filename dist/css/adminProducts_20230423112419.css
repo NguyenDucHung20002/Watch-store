@@ -1,0 +1,19 @@
+.wrapper-admin-products .product-header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-admin-products .product-header .search-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+}
+.wrapper-admin-products .product-header .search-product input {
+  flex: 1;
+  border-radius: 3px;
+  border: 1px solid #666;
+  height: 45px;
+}/*# sourceMappingURL=adminProducts_20230423112419.css.map */

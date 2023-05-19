@@ -1,0 +1,236 @@
+.alert {
+  position: fixed;
+  z-index: 1300;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.alert i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  line-height: 25px;
+  border-radius: 50%;
+}
+.alert.alert-primary i {
+  background-color: #0a58ca;
+}
+.alert.alert-danger i {
+  background-color: #b02a37;
+}
+.alert.get-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper-admin-products {
+  padding: 30px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrapper-admin-products .product-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.wrapper-admin-products .product-header .search-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+}
+.wrapper-admin-products .product-header .search-product input {
+  flex: 1;
+  border-radius: 3px;
+  border: 1px solid #666;
+  height: 45px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.wrapper-admin-products .product-header .search-product input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.wrapper-admin-products .product-header .search-product input:focus::placeholder {
+  opacity: 0;
+}
+.wrapper-admin-products .product-header .search-product input::-moz-placeholder {
+  color: #666;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+.wrapper-admin-products .product-header .search-product input::placeholder {
+  color: #666;
+  transition: 0.2s;
+}
+.wrapper-admin-products .product-header .search-product .btn-search-product {
+  margin-left: 10px;
+  width: 65px;
+  background-color: #0097e6;
+  height: 45px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.wrapper-admin-products .product-header .search-product .btn-search-product i {
+  color: #fff;
+}
+.wrapper-admin-products .product-header .search-product .btn-search-product:hover {
+  background-color: #00a8ff;
+}
+.wrapper-admin-products .product-header .wrapper-action button {
+  height: 45px;
+  background-color: #0097e6;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.wrapper-admin-products .product-header .wrapper-action button:hover {
+  background-color: #00a8ff;
+}
+.wrapper-admin-products .product-body {
+  background-color: #fefefe;
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+  border-radius: 4px;
+  overflow: auto;
+}
+.wrapper-admin-products .product-body::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 5px;
+}
+.wrapper-admin-products .product-body::-webkit-scrollbar {
+  width: 5px;
+}
+.wrapper-admin-products .product-body table {
+  width: 100%;
+}
+.wrapper-admin-products .product-body table thead {
+  height: 50px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.wrapper-admin-products .product-body table thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.wrapper-admin-products .product-body table thead tr th:first-child {
+  padding: 10px 20px;
+}
+.wrapper-admin-products .product-body table tbody tr {
+  border-bottom: 2px solid #e5e5e5;
+}
+.wrapper-admin-products .product-body table tbody tr th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.wrapper-admin-products .product-body table tbody tr th:first-child {
+  padding: 10px 20px;
+}
+.wrapper-admin-products .product-body table tbody tr th:last-child {
+  padding: 10px 20px 10px 0;
+}
+.wrapper-admin-products .product-body table tbody tr th .img {
+  width: 100px;
+}
+.wrapper-admin-products .product-body table tbody tr th .img img {
+  width: 70px;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  transition: 0.2s;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action button:hover {
+  background-color: #ba933e;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action button i {
+  line-height: 30px;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .delete {
+  background-color: #1a1a1a;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 120%;
+  right: 0;
+  background-color: #fefefe;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px 0 5px 5px;
+  border-radius: 3px;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele.active {
+  opacity: 1;
+  visibility: visible;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele p {
+  margin: 0;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele .btn-sure {
+  padding: 3px;
+  margin: 0 5px;
+  color: #fff;
+  width: 40px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele #yes {
+  background-color: #00a8ff;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .model-detele #no {
+  background-color: #2ecc71;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .edit {
+  background-color: #0097e6;
+  margin-left: 30px;
+}
+.wrapper-admin-products .product-body table tbody tr th .product-action .edit:hover {
+  background-color: #00a8ff;
+}
+.wrapper-admin-products .product-body table tbody tr .action-product {
+  width: 100px;
+}
+.wrapper-admin-products .product-body .btn-load-more {
+  display: block;
+  padding: 10px 15px;
+  background-color: #0097e6;
+  margin: 20px auto 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.wrapper-admin-products .product-body .btn-load-more:hover {
+  background-color: #00a8ff;
+}/*# sourceMappingURL=adminProducts.css.map */

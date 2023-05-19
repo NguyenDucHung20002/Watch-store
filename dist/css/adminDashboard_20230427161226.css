@@ -1,0 +1,22 @@
+#dashboard .statistics {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card .box {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#dashboard .statistics .statistic .card .box p {
+  margin: 0;
+  color: #00a8ff;
+}
+#dashboard .statistics .statistic .card .box i {
+  font-size: 35px;
+  color: #7f8fa6;
+}/*# sourceMappingURL=adminDashboard_20230427161226.css.map */

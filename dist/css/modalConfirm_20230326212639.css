@@ -1,0 +1,11 @@
+.wrapper-modal {
+  width: 400px;
+  height: 200px;
+  background-color: #fefefe;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+.wrapper-modal .model h3 {
+  color: #222;
+}/*# sourceMappingURL=modalConfirm_20230326212639.css.map */

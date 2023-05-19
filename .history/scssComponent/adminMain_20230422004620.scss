@@ -1,0 +1,119 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+$bg: #2f323f;
+
+.wrapper-admin {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg;
+  display: flex;
+  overflow: hidden;
+  .wrapper-nav {
+    height: 100vh;
+    padding: 30px 15px;
+    .navigation {
+      position: relative;
+      background-color: #fff;
+      border-radius: 3px;
+      height: 100%;
+      width: 75px;
+      padding: 60px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      &.active {
+        width: 250px;
+        .menu-toggle {
+          &::after {
+            transform: translateY(0) rotate(-45deg);
+            box-shadow: 0 0 0 #333;
+          }
+          &::before {
+            transform: translateY(0) rotate(45deg);
+          }
+        }
+      }
+      .menu-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        display: flex;
+        padding: 0 23px;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          background-color: #333;
+          transform: translateY(-8px);
+          transition: 0.3s;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          background-color: #333;
+          transform: translateY(8px);
+          box-shadow: 0 -8px 0 #333;
+          transition: 0.3s;
+        }
+      }
+      .lists-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .list {
+          list-style: none;
+          position: relative;
+          width: 100%;
+          height: 76px;
+          border-radius: 12px;
+          border: 8px solid transparent;
+          transition: 0.3s;
+          &.active {
+            transform: translateX(10px);
+            background: $bg;
+            a {
+              .icon {
+                color: #fff;
+                background-color: #00a8ff;
+              }
+            }
+          }
+          a {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            .icon {
+              display: block;
+              width: 60px;
+              height: 60px;
+              border-radius: 10px;
+              background-color: #fff;
+              font-size: 24px;
+              line-height: 60px;
+              color: #;
+            }
+          }
+        }
+      }
+    }
+  }
+  .admin-main {
+    background-color: #fff;
+    flex: 1;
+  }
+}

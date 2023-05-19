@@ -1,0 +1,12 @@
+.wrapper-statistic .container .statistic {
+  height: 60vh;
+}
+.wrapper-statistic .container .statistic .statistic-item {
+  height: 150px;
+}
+.wrapper-statistic .container .statistic .statistic-item p {
+  margin: 0;
+}
+.wrapper-statistic .container .statistic .products {
+  background-image: linear-gradient(to right top, #feca57, #f9b747, #f3a539, #ed922c, #e67e22);
+}/*# sourceMappingURL=statistic_20230328204634.css.map */

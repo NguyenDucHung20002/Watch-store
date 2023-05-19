@@ -1,0 +1,9 @@
+.wrapper-admin-products .product-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-admin-products .product-header .search-product {
+  display: flex;
+}/*# sourceMappingURL=adminProducts_20230423112030.css.map */

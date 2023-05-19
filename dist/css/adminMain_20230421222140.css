@@ -1,0 +1,17 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper-admin {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f323f;
+}
+.wrapper-admin .wrapper-nav .navigation {
+  position: relative;
+  background-color: #fff;
+  width: 75px;
+  padding: 30px 15px;
+  height: 100vh;
+  transition: 0.2s;
+}/*# sourceMappingURL=adminMain_20230421222140.css.map */

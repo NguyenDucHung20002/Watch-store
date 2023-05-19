@@ -1,0 +1,45 @@
+.wrapper-admin-products {
+  .product-header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      width: 100%;
+
+      input {
+        flex: 1;
+        border-radius: 3px;
+        border: 1px solid #666;
+        height: 45px;
+        padding: 5px 10px;
+        &:focus {
+          &::placeholder {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+          }
+        }
+
+        &::placeholder {
+          color: #666;
+          transition: 0.2s;
+        }
+      }
+      .btn-search-product {
+        margin-left: 10px;
+        width: 65px;
+        background-color: #3498db;
+        height: 45px;
+        border-radius: 3px;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

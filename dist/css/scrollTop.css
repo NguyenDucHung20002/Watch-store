@@ -1,7 +1,6 @@
 body {
   position: relative;
 }
-
 body .scroll-top {
   position: fixed;
   z-index: 100;
@@ -9,30 +8,23 @@ body .scroll-top {
   bottom: 30px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 body .scroll-top button {
   width: 50px;
   height: 50px;
   background-color: #57606f;
   border-radius: 50%;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
 }
-
 body .scroll-top button i {
   display: inline-block;
   color: #fff;
   font-size: 40px;
   line-height: 50px;
 }
-
 body .active-scroll-top {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-/*# sourceMappingURL=scrollTop.css.map */
+  transform: translateY(-10px);
+}/*# sourceMappingURL=scrollTop.css.map */

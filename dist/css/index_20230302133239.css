@@ -1,0 +1,16 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.wrapper-todo {
+  background-color: #dbdbdb;
+}
+
+.col-md-6 {
+  background-color: red;
+}/*# sourceMappingURL=index_20230302133239.css.map */

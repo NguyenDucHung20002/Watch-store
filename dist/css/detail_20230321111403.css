@@ -1,0 +1,17 @@
+.wrapper-detail .container .detail-img .action-slider {
+  display: flex;
+  align-items: center;
+}
+.wrapper-detail .container .detail-img .action-slider button {
+  font-size: 24px;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item .product-main {
+  max-width: 270px;
+  display: flex;
+  overflow: auto;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item .product-main .product-item img {
+  padding: 5px;
+  width: 90px;
+  cursor: pointer;
+}/*# sourceMappingURL=detail_20230321111403.css.map */

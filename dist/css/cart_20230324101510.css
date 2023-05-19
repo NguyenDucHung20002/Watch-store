@@ -1,0 +1,11 @@
+.cart-main .container {
+  position: relative;
+}
+.cart-main .container .wrapper-payment {
+  position: fixed;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+}/*# sourceMappingURL=cart_20230324101510.css.map */

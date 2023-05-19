@@ -1,0 +1,105 @@
+@import "./alert";
+
+.wrapper-admin-orders {
+  padding: 30px;
+  display: flex;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  .order-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    .search-orders {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      width: 100%;
+      margin-right: 30px;
+      input {
+        flex: 1;
+        border-radius: 3px;
+        border: 1px solid #666;
+        height: 45px;
+        padding: 5px 10px;
+        font-size: 16px;
+
+        &:focus {
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+
+        &::placeholder {
+          color: #666;
+          transition: 0.2s;
+        }
+      }
+      .btn-search-product {
+        margin-left: 10px;
+        width: 65px;
+        background-color: #0097e6;
+        height: 45px;
+        border-radius: 3px;
+        i {
+          color: #fff;
+        }
+        transition: 0.3s;
+        &:hover {
+          background-color: #00a8ff;
+        }
+      }
+    }
+    .search-date {
+      cursor: pointer;
+      border-radius: 3px;
+      border: 1px solid #666;
+      button {
+        height: 45px;
+        background-color: #0097e6;
+        padding: 010px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        transition: 0.3s;
+        &:hover {
+          background-color: #00a8ff;
+        }
+      }
+    }
+  }
+  .order-body {
+    background-color: #fefefe;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+    border-radius: 4px;
+    overflow: auto;
+
+    &::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .btn-order-load-more {
+      display: block;
+      padding: 10px 15px;
+      background-color: #0097e6;
+      margin: 20px auto 10px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: #00a8ff;
+      }
+    }
+  }
+}

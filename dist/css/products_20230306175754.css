@@ -1,0 +1,14 @@
+section .container .wrapper-products .item {
+  position: relative;
+  display: inline-block;
+}
+section .container .wrapper-products .item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .container .wrapper-products .item .pd-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=products_20230306175754.css.map */

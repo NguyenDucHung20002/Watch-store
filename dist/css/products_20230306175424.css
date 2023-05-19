@@ -1,0 +1,9 @@
+section .container .wrapper-products a {
+  display: inline-block;
+}
+section .container .wrapper-products a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=products_20230306175424.css.map */

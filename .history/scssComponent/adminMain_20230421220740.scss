@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+$bg: #2f323f;
+
+.wrapper-admin {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg;
+  .navigation {
+    .menu-toggle {
+    }
+  }
+}

@@ -1,0 +1,30 @@
+body {
+  position: relative;
+}
+body .scroll-top {
+  position: fixed;
+  z-index: 100;
+  right: 30px;
+  bottom: 30px;
+}
+body .scroll-top button {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  width: 50px;
+  height: 50px;
+  background-color: #57606f;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
+}
+body .scroll-top button i {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+}
+body .scroll-top .active-scroll-top {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}/*# sourceMappingURL=scrollTop_20230306152639.css.map */

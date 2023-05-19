@@ -1,0 +1,35 @@
+#dashboard .statistics {
+  padding: 30px;
+}
+#dashboard .statistics .statistic {
+  padding: 10px;
+}
+#dashboard .statistics .statistic .card {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+#dashboard .statistics .statistic .card .box {
+  font-family: "Roboto Mono", monospace;
+  margin-right: 20px;
+}
+#dashboard .statistics .statistic .card .box p {
+  font-weight: bolder;
+  font-size: 35px;
+  margin: 0;
+  color: #00a8ff;
+}
+#dashboard .statistics .statistic .card .box .name-card {
+  white-space: nowrap;
+  font-size: 25px;
+  color: #7f8fa6;
+}
+#dashboard .statistics .statistic .card .card-icon {
+  margin-top: 10px;
+}
+#dashboard .statistics .statistic .card .card-icon i {
+  font-size: 40px;
+  color: #7f8fa6;
+}/*# sourceMappingURL=adminDashboard_20230427164616.css.map */

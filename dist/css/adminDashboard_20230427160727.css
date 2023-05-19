@@ -1,0 +1,17 @@
+#dashboard .statistics {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card .box {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#dashboard .statistics .statistic .card .box p {
+  margin: 0;
+}/*# sourceMappingURL=adminDashboard_20230427160727.css.map */

@@ -1,7 +1,6 @@
 section .container .create-cart {
   width: 150px;
   margin: 30px 0;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #333;
   border-radius: 4px;
@@ -10,75 +9,56 @@ section .container .create-cart {
   z-index: 3;
   transition: 0.3s;
 }
-
 section .container .create-cart:hover {
   opacity: 1;
   background-color: #3498db;
   color: #fff;
 }
-
 section .container .wrapper-products {
   min-height: 300px;
   margin-bottom: 40px;
 }
-
 section .container .wrapper-products .item {
   position: relative;
 }
-
 section .container .wrapper-products .item:hover .pd-img {
   opacity: 0;
 }
-
 section .container .wrapper-products .item:hover .product-action {
   opacity: 1;
   visibility: visible;
   right: 10px;
 }
-
 section .container .wrapper-products .item a {
   position: relative;
   display: inline-block;
 }
-
 section .container .wrapper-products .item a img {
   position: relative;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 section .container .wrapper-products .item a .pd-bg-img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
 }
-
 section .container .wrapper-products .item .product-action {
   position: absolute;
   top: 10px;
   right: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: end;
+  flex-direction: column;
 }
-
 section .container .wrapper-products .item .product-action .content {
   font-size: 14px;
   background-color: #ff6348;
@@ -88,12 +68,10 @@ section .container .wrapper-products .item .product-action .content {
   text-align: center;
   border-radius: 3px;
 }
-
 section .container .wrapper-products .item .product-action .detail {
   margin-top: 10px;
   width: 40px;
   height: 40px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #dfe4ea;
   font-size: 20px;
@@ -102,20 +80,16 @@ section .container .wrapper-products .item .product-action .detail {
   opacity: 0.8;
   cursor: pointer;
 }
-
 section .container .wrapper-products .item .product-action .detail i {
   line-height: 40px;
 }
-
 section .container .wrapper-products .item .product-action .detail:hover {
   background-color: #eccc68;
   opacity: 1;
 }
-
 section .container .wrapper-products .item .product-action .detail:hover i {
   color: #fff;
 }
-
 @media (max-width: 992px) {
   section .container .wrapper-products .item .pd-img {
     opacity: 0;
@@ -126,70 +100,43 @@ section .container .wrapper-products .item .product-action .detail:hover i {
     right: 10px;
   }
 }
-
 section .container .wrapper-products .product-name {
   font-size: 14px;
   font-weight: 500;
   margin: 5px 0;
 }
-
 section .container .wrapper-products .price {
   margin-bottom: 0px;
 }
-
 section .container .wrapper-products .wrapper-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 5px 0;
 }
-
 section .container .wrapper-products .wrapper-rating .stars {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-right: 20px;
 }
-
 section .container .wrapper-products .wrapper-rating .stars li i {
   color: #666;
 }
-
 section .container .wrapper-products .wrapper-rating .stars .active i {
   color: #eccc68;
 }
-
 section .container .wrapper-products .handle-product {
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
 }
-
 section .container .wrapper-products .handle-product button {
   width: 50%;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #333;
   padding: 5px 8px;
@@ -197,52 +144,39 @@ section .container .wrapper-products .handle-product button {
   z-index: 3;
   transition: 0.3s;
 }
-
 section .container .wrapper-products .handle-product .delete-cart:hover {
   opacity: 1;
   background-color: #e74c3c;
   color: #fff;
 }
-
 section .container .wrapper-products .handle-product .update-cart:hover {
   opacity: 1;
   background-color: #2ecc71;
   color: #fff;
 }
-
 section .container .wrapper-products .handle-product .model-detele {
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: absolute;
   top: -35px;
   z-index: 10;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #e5e5e5;
   border-radius: 3px;
   padding: 3px;
 }
-
 section .container .wrapper-products .handle-product .model-detele.active {
   opacity: 1;
   visibility: visible;
 }
-
 section .container .wrapper-products .handle-product .model-detele p {
   margin: 0;
   color: #1a1a1a;
   font-size: 14px;
   font-weight: 500;
 }
-
 section .container .wrapper-products .handle-product .model-detele .btn-sure {
   color: #fff;
   border-radius: 3px;
@@ -254,27 +188,20 @@ section .container .wrapper-products .handle-product .model-detele .btn-sure {
   text-align: center;
   cursor: pointer;
 }
-
 section .container .wrapper-products .handle-product .model-detele #yes {
   background-color: #2ecc71;
   margin: 0 5px;
   opacity: 0.5;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 section .container .wrapper-products .handle-product .model-detele #yes:hover {
   opacity: 1;
 }
-
 section .container .wrapper-products .handle-product .model-detele #no {
   background-color: #c0392b;
   opacity: 0.5;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 section .container .wrapper-products .handle-product .model-detele #no:hover {
   opacity: 1;
-}
-/*# sourceMappingURL=adminProduct.css.map */
+}/*# sourceMappingURL=adminProduct.css.map */

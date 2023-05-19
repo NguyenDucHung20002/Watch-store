@@ -1,0 +1,18 @@
+body {
+  position: relative;
+}
+body .scroll-top {
+  position: fixed;
+  z-index: 100;
+  right: 30px;
+  bottom: 30px;
+}
+body .scroll-top button {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+}
+body .scroll-top button i {
+  display: inline-block;
+  color: #333;
+}/*# sourceMappingURL=scrollTop_20230306145143.css.map */

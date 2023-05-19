@@ -1,0 +1,80 @@
+.checkout .container .title-checkout {
+  margin: 10px 0;
+  font-size: 32px;
+  color: #666;
+  font-weight: 500;
+}
+.checkout .container .wrapper-checkout {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.checkout .container .wrapper-checkout .checkout-item .date-create {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  border-bottom: 2px solid #e5e5e5;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products img {
+  width: 90px;
+  height: 90px;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products .product-content {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products .product-content .name-product {
+  max-width: 120px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products .product-content .product-type {
+  display: inline-block;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products .product-content .product-type .quantity {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+.checkout .container .wrapper-checkout .checkout-item .checkout-detail .products .product-content .product-type .price {
+  font-size: 16px;
+  font-weight: 500;
+}
+.checkout .container .wrapper-checkout .wrapper-bill-empty {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkout .container .wrapper-checkout .wrapper-bill-empty .bill-empty {
+  display: block;
+  width: 50%;
+  margin: 30px 0 20px;
+}
+.checkout .container .wrapper-checkout .wrapper-bill-empty h2 {
+  display: block;
+  color: #666;
+}/*# sourceMappingURL=purchase_20230329142511.css.map */

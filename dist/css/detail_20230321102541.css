@@ -1,0 +1,9 @@
+.wrapper-detail .container .detail-img .action-slider .product-img {
+  max-width: 270px;
+  display: flex;
+  overflow: hidden;
+}
+.wrapper-detail .container .detail-img .action-slider .product-img img {
+  padding: 5px;
+  width: 90px;
+}/*# sourceMappingURL=detail_20230321102541.css.map */

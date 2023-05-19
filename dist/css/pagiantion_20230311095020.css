@@ -1,0 +1,11 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+}
+.page-navigation ul li {
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  border-top: 1px solid #666;
+}/*# sourceMappingURL=pagiantion_20230311095020.css.map */

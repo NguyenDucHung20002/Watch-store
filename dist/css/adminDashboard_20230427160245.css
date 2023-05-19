@@ -1,0 +1,9 @@
+#dashboard .statistics {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card {
+  padding: 30px;
+}
+#dashboard .statistics .statistic .card .box p {
+  margin: 0;
+}/*# sourceMappingURL=adminDashboard_20230427160245.css.map */

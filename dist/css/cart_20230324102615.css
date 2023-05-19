@@ -1,0 +1,16 @@
+.cart-main .container {
+  position: relative;
+}
+.cart-main .container .wrapper-payment {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cart-main .container .wrapper-payment .payment-main {
+  padding: 20px;
+  background-color: aqua;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=cart_20230324102615.css.map */

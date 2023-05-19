@@ -1,0 +1,11 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+}
+.page-navigation ul li {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #666;
+}/*# sourceMappingURL=pagiantion_20230311091752.css.map */

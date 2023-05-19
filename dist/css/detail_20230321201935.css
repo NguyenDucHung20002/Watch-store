@@ -1,0 +1,91 @@
+.wrapper-detail .container .detail-img {
+  padding: 20px 5px 20px 0;
+}
+.wrapper-detail .container .detail-img .action-slider-show {
+  transition: 0.3s;
+  width: 100%;
+  max-height: 565px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-detail .container .detail-img .action-slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.wrapper-detail .container .detail-img .action-slider button {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #666;
+  color: #fff;
+  transition: 0.3s;
+}
+.wrapper-detail .container .detail-img .action-slider button:hover {
+  background-color: #333;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item {
+  margin: 0 auto;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item .product-main {
+  max-width: 270px;
+  display: flex;
+  padding-right: 2px;
+  overflow: hidden;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item .product-main .product-item img {
+  transition: 0.1s;
+  padding: 5px;
+  width: 90px;
+  cursor: pointer;
+}
+.wrapper-detail .container .detail-img .action-slider .wrapper-product-item .product-main .active img {
+  border: 2px solid #666;
+}
+.wrapper-detail .container .detail-content {
+  margin-top: 40px;
+  max-width: 500px;
+}
+.wrapper-detail .container .detail-content .product-name {
+  font-size: 26px;
+  color: #353b48;
+  font-weight: 700;
+}
+.wrapper-detail .container .detail-content .stars-rating {
+  margin: 15px 0;
+}
+.wrapper-detail .container .detail-content .stars-rating i {
+  font-size: 20px;
+  color: #f0932b;
+}
+.wrapper-detail .container .detail-content .prise {
+  font-size: 24px;
+  font-weight: 700;
+  color: #666;
+}
+.wrapper-detail .container .detail-content .describe {
+  font-size: 18px;
+  font-weight: 500;
+}
+.wrapper-detail .container .detail-content .content-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-detail .container .detail-content .content-action .quantiti-product {
+  width: 120px;
+  height: 50px;
+  background-color: #f5f5f5;
+}
+.wrapper-detail .container .detail-content .content-action .quantiti-product button {
+  width: 25%;
+  height: 100%;
+}
+.wrapper-detail .container .detail-content .content-action .quantiti-product input {
+  width: 50%;
+  height: 100%;
+  border: #333 1px solid;
+  text-align: center;
+}/*# sourceMappingURL=detail_20230321201935.css.map */

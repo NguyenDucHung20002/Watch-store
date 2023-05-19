@@ -1,0 +1,9 @@
+.wrapper-statistic .container .statistic {
+  height: 60vh;
+}
+.wrapper-statistic .container .statistic .statistic-item {
+  padding: 30px;
+}
+.wrapper-statistic .container .statistic .statistic-item p {
+  margin: 0;
+}/*# sourceMappingURL=statistic_20230328204113.css.map */

@@ -1,0 +1,12 @@
+.page-navigation {
+  width: 400px;
+  margin: 0 auto;
+}
+.page-navigation ul li {
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+  background-color: #666;
+}/*# sourceMappingURL=pagiantion_20230311094910.css.map */

@@ -1,0 +1,21 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+$bg: #2f323f;
+
+.wrapper-admin {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg;
+  .navigation {
+    position: relative;
+    background-color: #fff;
+    width: 75px;
+    padding: 30px 15px;
+    height: 100vh;
+    transition: 0.2s;
+    .menu-toggle {
+    }
+  }
+}

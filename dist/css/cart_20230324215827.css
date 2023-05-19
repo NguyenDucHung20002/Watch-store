@@ -1,0 +1,149 @@
+.cart-main .container {
+  position: relative;
+}
+.cart-main .container .wrapper-carts .product-main h2 {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 50px 0 0 0;
+}
+.cart-main .container .wrapper-carts .product-main table {
+  width: 100%;
+}
+.cart-main .container .wrapper-carts .product-main table thead {
+  height: 50px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.cart-main .container .wrapper-carts .product-main table thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr {
+  border-bottom: 2px solid #e5e5e5;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th {
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .img {
+  width: 100px;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .img img {
+  width: 100px;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .quantiti-product {
+  width: 120px;
+  height: 50px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .quantiti-product button {
+  height: 100%;
+  flex: 1;
+  font-size: 18px;
+  transition: 0.2s;
+  font-weight: 500;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .quantiti-product button:hover {
+  color: #ff4757;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .quantiti-product input {
+  font-size: 18px;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .delete {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  background-color: #1a1a1a;
+  transition: 0.2s;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .delete:hover {
+  background-color: #ba933e;
+}
+.cart-main .container .wrapper-carts .product-main table tbody tr th .delete i {
+  line-height: 30px;
+}
+.cart-main .container .wrapper-payment {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.cart-main .container .wrapper-payment .payment-main {
+  max-width: 1200px;
+  border-bottom: #e5e5e5 2px solid;
+  border-top: #e5e5e5 2px solid;
+  padding: 10px 0;
+  background-color: #fefefe;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-main .container .wrapper-payment .payment-main .action-cart {
+  margin: 5px 0;
+}
+.cart-main .container .wrapper-payment .payment-main .action-cart .detele-all {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  margin-right: 20px;
+}
+.cart-main .container .wrapper-payment .payment-main .action-cart .detele-all:hover {
+  background-color: #ba933e;
+}
+.cart-main .container .wrapper-payment .payment-main .action-cart .update-cart {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.cart-main .container .wrapper-payment .payment-main .action-cart .update-cart:hover {
+  background-color: #ba933e;
+}
+.cart-main .container .wrapper-payment .payment-main .payment {
+  height: 50px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cart-main .container .wrapper-payment .payment-main .payment .total {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ba933e;
+  margin-right: 10px;
+}
+.cart-main .container .wrapper-payment .payment-main .payment .checkout {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.cart-main .container .wrapper-payment .payment-main .payment .checkout:hover {
+  background-color: #ba933e;
+}/*# sourceMappingURL=cart_20230324215827.css.map */

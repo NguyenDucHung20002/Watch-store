@@ -1,0 +1,173 @@
+#dashboard .wrapper-statistics {
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#dashboard .wrapper-statistics .statistics {
+  padding: 20px 30px;
+}
+#dashboard .wrapper-statistics .statistics .statistic {
+  padding: 10px;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card .box {
+  font-family: "Roboto Mono", monospace;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card .box p {
+  font-weight: bolder;
+  font-size: 35px;
+  margin: 0;
+  color: #00a8ff;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card .box .name-card {
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 500;
+  color: #7f8fa6;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card .card-icon {
+  margin-top: 10px;
+}
+#dashboard .wrapper-statistics .statistics .statistic .card .card-icon i {
+  font-size: 50px;
+  color: #7f8fa6;
+}
+#dashboard .wrapper-statistics .dashboard-body {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+  height: 100%;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling {
+  min-height: 500px;
+  padding: 20px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 20px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling {
+  width: 100%;
+  width: 100%;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling thead {
+  height: 50px;
+  border-bottom: 2px solid #e5e5e5;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling thead tr th:first-child {
+  padding: 10px 20px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr {
+  border-bottom: 2px solid #e5e5e5;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th {
+  font-weight: 500;
+  white-space: nowrap;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th:first-child {
+  padding: 10px 20px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th:last-child {
+  padding: 10px 20px 10px 0;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .img {
+  width: 100px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .img img {
+  width: 70px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  transition: 0.2s;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action button:hover {
+  background-color: #ba933e;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action button i {
+  line-height: 30px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .delete {
+  background-color: #1a1a1a;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 120%;
+  right: 0;
+  background-color: #fefefe;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px 0 5px 5px;
+  border-radius: 3px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele.active {
+  opacity: 1;
+  visibility: visible;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele p {
+  margin: 0;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele .btn-sure {
+  padding: 3px;
+  margin: 0 5px;
+  color: #fff;
+  width: 40px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele #yes {
+  background-color: #00a8ff;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .model-detele #no {
+  background-color: #2ecc71;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .edit {
+  background-color: #0097e6;
+  margin-left: 30px;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr th .product-action .edit:hover {
+  background-color: #00a8ff;
+}
+#dashboard .wrapper-statistics .dashboard-body .best-selling .best-selling-tiems .selling tbody tr .action-product {
+  width: 100px;
+}
+#dashboard .wrapper-statistics .dashboard-body .bar-chart {
+  padding: 20px;
+}
+#dashboard .wrapper-statistics .dashboard-body .bar-chart .my-chart {
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 20px;
+  min-height: 500px;
+}/*# sourceMappingURL=adminDashboard_20230427222242.css.map */

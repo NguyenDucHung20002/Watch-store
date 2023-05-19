@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container .nav-top {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.container .nav-top .logo-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .nav-top .logo-search .logo-icon {
+  display: flex;
+  align-items: center;
+}
+.container .nav-top .logo-search .logo-icon img {
+  width: 35px;
+  display: inline-block;
+}
+.container .nav-top .logo-search .logo-icon p {
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin: 0 30px 0 5px;
+}
+.container .nav-top .logo-search form {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(102, 102, 102, 0.7);
+  border-radius: 5px;
+}
+.container .nav-top .logo-search form input {
+  flex: 1;
+  padding: 7px;
+  height: 40px;
+  color: #666;
+}
+.container .nav-top .logo-search form input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.container .nav-top .logo-search form input:focus::placeholder {
+  opacity: 0;
+}
+.container .nav-top .logo-search form input::-moz-placeholder {
+  font-size: 14px;
+  padding-left: 5px;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.container .nav-top .logo-search form input::placeholder {
+  font-size: 14px;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.container .nav-top .logo-search form .submit {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .nav-bottom {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #333;
+  padding: 5px 10px 10px;
+}
+.container .nav-bottom ul {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.container .nav-bottom ul li {
+  z-index: 1;
+}
+.container .nav-bottom ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+.container .nav-bottom ul .animation {
+  position: absolute;
+  transition: 0.3s;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}/*# sourceMappingURL=index_20230304092333.css.map */
