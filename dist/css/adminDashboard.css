@@ -128,9 +128,19 @@
 #dashboard .wrapper-statistics .dashboard-body .bar-chart {
   padding: 20px;
 }
+#dashboard .wrapper-statistics .dashboard-body .bar-chart h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00a8ff;
+  text-align: center;
+}
 #dashboard .wrapper-statistics .dashboard-body .bar-chart .my-chart {
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
   padding: 20px;
-  min-height: 500px;
+}
+#dashboard .wrapper-statistics .dashboard-body .bar-chart .my-area-chart {
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 20px;
 }/*# sourceMappingURL=adminDashboard.css.map */
