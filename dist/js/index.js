@@ -5,6 +5,7 @@ const $$ = document.querySelectorAll.bind(document);
 const alertSuccess = $(".alert-primary");
 const alertDanger = $(".alert-danger");
 localStorage.removeItem("Purchase");
+localStorage.removeItem("registerUser");
 const User = JSON.parse(localStorage.getItem("loginUser"));
 console.log("User:", User);
 const HTTP = "http://localhost:5000/api/";

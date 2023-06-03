@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        total: totalCart * 9500,
+        total: totalCart * 123,
         nextUrl: "http://127.0.0.1:5500/thanks.html",
       }),
     })

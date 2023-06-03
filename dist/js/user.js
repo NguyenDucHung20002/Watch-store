@@ -46,9 +46,9 @@ async function login(data) {
     });
 }
 
-async function register(data) {
+async function verifyDate(data) {
   try {
-    await fetch(`${http}register`, {
+    await fetch(`${http}verifyregister`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -64,14 +64,37 @@ async function register(data) {
             alertDanger.classList.remove("get-active");
           }, 3000);
         } else {
-          alertSuccess.children[0].textContent = `Register successfuly`;
-          alertSuccess.classList.add("get-active");
+          verifyEmail(data);
+          console.log("data:", data);
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  } catch (error) {
+    console.log("error:", error);
+  }
+}
+
+async function register(data) {
+  try {
+    await fetch(`${http}isuserexisted`, {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        if (!response.success) {
+          alertDanger.children[0].textContent = `${response.message}`;
+          alertDanger.classList.add("get-active");
           setTimeout(() => {
-            alertSuccess.classList.remove("get-active");
+            alertDanger.classList.remove("get-active");
           }, 3000);
-          signinBtn.click();
-          formSignin.elements["email"].value = data.email;
-          formSignin.elements["password"].value = data.password;
+        } else {
+          verifyDate(data);
         }
       })
       .catch((error) => {
@@ -84,6 +107,27 @@ async function register(data) {
       alertDanger.classList.remove("get-active");
     }, 2000);
   }
+}
+
+function verifyEmail(data) {
+  let ebody = `
+    <a style="font-size: 24px;" href="http://127.0.0.1:5500/vevifyUser.html?email=${data?.email}">http://127.0.0.1:5500/vevifyUser.html?email=${data?.email}</a>
+    `;
+
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "hungduc2102@gmail.com",
+    Password: "64723179CC01B59B16647A572C0E57E96783",
+    To: data?.email,
+    From: "hungduc2102@gmail.com",
+    Subject: "Verify Email with LUX",
+    Body: ebody,
+  }).then((message) => {
+    if (message === "OK") {
+      localStorage.setItem("registerUser", JSON.stringify(data));
+      alert(`We've sent a confirmation to ${data?.email}`);
+    }
+  });
 }
 
 window.addEventListener("load", function () {
