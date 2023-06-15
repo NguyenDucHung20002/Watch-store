@@ -3,9 +3,9 @@ const $$ = document.querySelectorAll.bind(document);
 const http = "http://localhost:5000/api/";
 const data = JSON.parse(localStorage.getItem("Purchase"));
 const solds = JSON.parse(localStorage.getItem("checkout"));
+const User = JSON.parse(localStorage.getItem("loginUser"));
 localStorage.removeItem("Purchase");
 localStorage.removeItem("checkout");
-const User = JSON.parse(localStorage.getItem("loginUser"));
 if (!User) {
   window.location.replace("./index.html");
 }

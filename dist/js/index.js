@@ -73,8 +73,8 @@ function alertFullil() {
   }, 3000);
 }
 
-function alertFail() {
-  alertDanger.children[0].textContent = `Something fail!`;
+function alertFail(text) {
+  alertDanger.children[0].textContent = text || `Something fail!`;
   alertDanger.classList.add("get-active");
   setTimeout(() => {
     alertDanger.classList.remove("get-active");
@@ -331,11 +331,11 @@ window.addEventListener("load", function () {
                   _this.product(_this.pageInto, _this.searching);
                 })
                 .catch(() => {
-                  alertFail();
+                  alertFail("You need to login first!");
                 });
             })
             .catch(() => {
-              alertFail();
+              alertFail("You need to login first!");
             });
         }
 
@@ -393,7 +393,7 @@ window.addEventListener("load", function () {
                     });
                 })
                 .catch(() => {
-                  alertFail();
+                  alertFail("You need to login first!");
                 });
             })
             .catch(() => {

@@ -29,7 +29,7 @@ function rederApplyProduct(data) {
                         </a>
                         <button class="add-cart" ><i class="fa-solid fa-bag-shopping"></i></i> Add To Cart</button>
                         <ul class="product-action">
-                        <li class="content"><i class="fa-solid fa-thumbs-up"></i></li>
+                        <li class="content">${data.state}</li>
                             
                             <li class="detail" ><i class="fa-solid fa-eye"></i></li>
                         </ul>
@@ -126,8 +126,9 @@ function renderProducts(val) {
 }
 
 async function addProduct(data) {
+  console.log("data:", data);
   try {
-    await fetch(`${http}/product`, {
+    await fetch(`${http}product`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -152,6 +153,7 @@ async function addProduct(data) {
         console.error("Error:", error);
       });
   } catch (error) {
+    console.log("error:", error);
     alertFail("some thing wrong!");
   }
 }
@@ -186,7 +188,7 @@ async function editProduct(data, isUpdateNow) {
 async function deleteProduct(deleteId) {
   try {
     spinner(true);
-    fetch(`${http}/product/${deleteId}`, {
+    fetch(`${http}product/${deleteId}`, {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
         authentication: User?.token,
